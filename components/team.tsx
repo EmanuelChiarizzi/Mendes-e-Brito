@@ -7,20 +7,36 @@ import { ArrowUpRight } from "lucide-react"
 
 const teamMembers = [
   {
-    name: "Amanda",
-    role: "Advogada",
+    name: "Amanda Trindade",
+    role: "Estagiaria",
     oab: "",
     specialization: "",
     experience: "",
     image: "/equipe-otimizada/amanda.webp",
   },
-  {
-    name: "Anya Lima Penha de Brito",
-    role: "Sócia diretora",
-    oab: "OAB/CE 19.162",
+    {
+    name: "Leticia Alencar",
+    role: "Estagiaria",
+    oab: "",
     specialization: "",
     experience: "",
-    image: "/equipe-otimizada/anya.webp",
+    image: "",
+  },
+    {
+    name: "Maria Veras",
+    role: "Assistente Jurídica",
+    oab: "",
+    specialization: "",
+    experience: "",
+    image: "",
+  },
+  {
+    name: "Kamylla",
+    role: "Secretaria Executiva",
+    oab: "",
+    specialization: "",
+    experience: "",
+    image: "/equipe-otimizada/kamylla.webp",
   },
   {
     name: "Gabriela Oliveira Farias",
@@ -39,12 +55,12 @@ const teamMembers = [
     image: "/equipe-otimizada/isadora.webp",
   },
   {
-    name: "Kamylla",
-    role: "Advogada",
-    oab: "",
-    specialization: "",
-    experience: "",
-    image: "/equipe-otimizada/kamylla.webp",
+    name: "Rodrigo Feitosa Leitão Lima",
+    role: "Advogado",
+    oab: "OAB/CE 45.645",
+    specialization: "Criminal e Direito Público",
+    experience: "5 anos de atuação",
+    image: "/equipe-otimizada/rodrigo.webp",
   },
   {
     name: "Lyzanndra Magna Gonçalves da Silva",
@@ -55,20 +71,20 @@ const teamMembers = [
     image: "/equipe-otimizada/lyzanndra.webp",
   },
   {
-    name: "Rodrigo Feitosa Leitão Lima",
-    role: "Advogado",
-    oab: "OAB/CE 45.645",
-    specialization: "Criminal e Direito Público",
-    experience: "5 anos de atuação",
-    image: "/equipe-otimizada/rodrigo.webp",
-  },
-  {
     name: "Yohanna Pontes Mendes",
     role: "Sócia diretora",
     oab: "OAB/CE 37.250",
     specialization: "",
     experience: "",
     image: "/equipe-otimizada/yohanna.webp",
+  },
+  {
+    name: "Anya Lima Penha de Brito",
+    role: "Sócia diretora",
+    oab: "OAB/CE 19.162",
+    specialization: "",
+    experience: "",
+    image: "/equipe-otimizada/anya.webp",
   },
 ]
 

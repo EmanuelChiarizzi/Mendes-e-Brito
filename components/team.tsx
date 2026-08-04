@@ -1,24 +1,78 @@
-"use client"
+﻿"use client"
+
+import Image from "next/image"
 
 import { motion } from "framer-motion"
 import { ArrowUpRight } from "lucide-react"
 
 const teamMembers = [
   {
-    name: "Yohanna Mendes",
-    role: "Sócia-fundadora",
-    description:
-      "Advogada e cofundadora do Mendes & Brito Advogados. Informações sobre formação, experiência e áreas de atuação serão validadas com o escritório.",
-    initials: "YM",
+    name: "Amanda",
+    role: "Advogada",
+    oab: "",
+    specialization: "",
+    experience: "",
+    image: "/equipe-otimizada/amanda.webp",
   },
   {
-    name: "Anya Brito",
-    role: "Sócia-fundadora",
-    description:
-      "Advogada e cofundadora do Mendes & Brito Advogados. Informações sobre formação, experiência e áreas de atuação serão validadas com o escritório.",
-    initials: "AB",
+    name: "Anya Lima Penha de Brito",
+    role: "Sócia diretora",
+    oab: "OAB/CE 19.162",
+    specialization: "",
+    experience: "",
+    image: "/equipe-otimizada/anya.webp",
+  },
+  {
+    name: "Gabriela Oliveira Farias",
+    role: "Advogada",
+    oab: "OAB/CE 53.153 | OAB/RN 24.008-A",
+    specialization: "Cível e Trabalhista",
+    experience: "2 anos de atuação",
+    image: "/equipe-otimizada/gabriela.webp",
+  },
+  {
+    name: "Isadora Gonçalves da Silva",
+    role: "Advogada",
+    oab: "OAB/CE 57.241",
+    specialization: "Cível e Empresarial",
+    experience: "4 meses de atuação",
+    image: "/equipe-otimizada/isadora.webp",
+  },
+  {
+    name: "Kamylla",
+    role: "Advogada",
+    oab: "",
+    specialization: "",
+    experience: "",
+    image: "/equipe-otimizada/kamylla.webp",
+  },
+  {
+    name: "Lyzanndra Magna Gonçalves da Silva",
+    role: "Advogada — Coordenação",
+    oab: "OAB/CE 44.207",
+    specialization: "Família, Consumidor e Cível Geral",
+    experience: "6 anos de atuação",
+    image: "/equipe-otimizada/lyzanndra.webp",
+  },
+  {
+    name: "Rodrigo Feitosa Leitão Lima",
+    role: "Advogado",
+    oab: "OAB/CE 45.645",
+    specialization: "Criminal e Direito Público",
+    experience: "5 anos de atuação",
+    image: "/equipe-otimizada/rodrigo.webp",
+  },
+  {
+    name: "Yohanna Pontes Mendes",
+    role: "Sócia diretora",
+    oab: "OAB/CE 37.250",
+    specialization: "",
+    experience: "",
+    image: "/equipe-otimizada/yohanna.webp",
   },
 ]
+
+const carouselMembers = [...teamMembers, ...teamMembers, ...teamMembers]
 
 export function Team() {
   return (
@@ -28,16 +82,20 @@ export function Team() {
     >
       <BackgroundDecor />
 
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-28 lg:px-10 lg:py-40">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-16 pt-28 lg:px-10 lg:pb-24 lg:pt-40">
         <motion.div
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          transition={{
+            duration: 0.8,
+            ease: [0.22, 1, 0.36, 1],
+          }}
           className="max-w-3xl"
         >
           <div className="mb-10 flex items-center gap-4">
             <span className="h-px w-12 bg-gold" />
+
             <span className="text-xs tracking-[0.4em] text-gold">
               NOSSA EQUIPE
             </span>
@@ -54,67 +112,98 @@ export function Team() {
             realidade.
           </p>
         </motion.div>
+      </div>
 
-        <div className="mt-20 grid grid-cols-1 border-t border-border/60 md:grid-cols-2 lg:mt-24">
-          {teamMembers.map((member, index) => (
-            <motion.article
-              key={member.name}
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{
-                duration: 0.75,
-                delay: index * 0.1,
-                ease: [0.22, 1, 0.36, 1],
-              }}
-              className={`group border-b border-border/60 ${
-                index === 1 ? "md:border-l md:border-border/60" : ""
-              }`}
+      <div className="relative z-10 w-full overflow-hidden border-y border-border/60 py-10 lg:py-14">
+        <div className="pointer-events-none absolute inset-y-0 left-0 z-20 w-20 bg-gradient-to-r from-background to-transparent sm:w-32 lg:w-48" />
+
+        <div className="pointer-events-none absolute inset-y-0 right-0 z-20 w-20 bg-gradient-to-l from-background to-transparent sm:w-32 lg:w-48" />
+
+        <motion.div
+          className="flex w-max gap-6 px-6 lg:gap-8 lg:px-10"
+          animate={{
+            x: ["0%", "-33.333%"],
+          }}
+          transition={{
+            duration: 28,
+            repeat: Infinity,
+            ease: "linear",
+          }}
+        >
+          {carouselMembers.map((member, index) => (
+            <article
+              key={`${member.name}-${index}`}
+              className="group w-[300px] shrink-0 overflow-hidden border border-border/60 bg-background/80 backdrop-blur-sm sm:w-[340px] lg:w-[380px]"
             >
-              <div className="grid min-h-[580px] grid-rows-[1fr_auto]">
-                <div className="relative flex items-center justify-center overflow-hidden bg-foreground/0.25">
-                  <div className="absolute inset-8 border border-border/60" />
-                  <div className="absolute left-8 top-8 h-px w-14 bg-gold" />
-                  <div className="absolute left-8 top-8 h-14 w-px bg-gold" />
-                  <div className="absolute bottom-8 right-8 h-px w-14 bg-gold" />
-                  <div className="absolute bottom-8 right-8 h-14 w-px bg-gold" />
+              <div className="relative flex h-[390px] items-center justify-center overflow-hidden bg-foreground/[0.025] sm:h-[430px]">
+                <div className="absolute inset-6 border border-border/60" />
 
-                  <span className="font-serif text-7xl font-light tracking-tight text-foreground transition-transform duration-700 group-hover:scale-105 md:text-8xl">
-                    {member.initials}
-                  </span>
+                <div className="absolute left-6 top-6 h-px w-12 bg-gold" />
+                <div className="absolute left-6 top-6 h-12 w-px bg-gold" />
 
-                  <span className="absolute bottom-12 text-[10px] tracking-[0.35em] text-muted-foreground">
-                    FOTO PROFISSIONAL
-                  </span>
-                </div>
+                <div className="absolute bottom-6 right-6 h-px w-12 bg-gold" />
+                <div className="absolute bottom-6 right-6 h-12 w-px bg-gold" />
 
-                <div className="border-t border-border/60 px-6 py-8 md:px-8 md:py-10">
-                  <div className="flex items-start justify-between gap-6">
-                    <div>
-                      <p className="text-xs tracking-[0.28em] text-gold">
-                        {member.role.toUpperCase()}
-                      </p>
 
-                      <h3 className="mt-3 font-serif text-3xl font-light text-foreground">
-                        {member.name}
-                      </h3>
-                    </div>
 
-                    <ArrowUpRight
-                      className="mt-1 h-5 w-5 shrink-0 text-muted-foreground transition-all duration-500 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-gold"
-                      strokeWidth={1.25}
-                      aria-hidden="true"
-                    />
+              <Image
+                src={member.image}
+                alt={`Foto profissional de ${member.name}`}
+                fill
+                sizes="(max-width: 640px) 300px, (max-width: 1024px) 340px, 380px"
+                className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+              />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
+              </div>
+
+              <div className="border-t border-border/60 px-6 py-7 sm:px-8 sm:py-8">
+                <div className="flex items-start justify-between gap-6">
+                  <div>
+                    <p className="text-[10px] tracking-[0.28em] text-gold sm:text-xs">
+                      {member.role.toUpperCase()}
+                    </p>
+
+                    <h3 className="mt-3 font-serif text-2xl font-light text-foreground sm:text-3xl">
+                      {member.name}
+                    </h3>
                   </div>
 
-                  <p className="mt-5 max-w-xl text-sm leading-relaxed text-muted-foreground lg:text-base">
-                    {member.description}
-                  </p>
+                  <ArrowUpRight
+                    className="mt-1 h-5 w-5 shrink-0 text-muted-foreground transition-all duration-500 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-gold"
+                    strokeWidth={1.25}
+                    aria-hidden="true"
+                  />
                 </div>
-              </div>
-            </motion.article>
-          ))}
-        </div>
+                {(member.oab || member.specialization || member.experience) && (
+                  <div className="mt-5 space-y-2 text-sm text-muted-foreground">
+                    {member.oab && <p>{member.oab}</p>}
+
+                    {member.specialization && (
+                      <p className="text-foreground/80">
+                        {member.specialization}
+                      </p>
+                    )}
+
+                    {member.experience && <p>{member.experience}</p>}
+                  </div>
+                )}
+
+                </div>
+              </article>
+              ))}
+            </motion.div>
+          </div>
+
+      <div className="relative z-10 mx-auto flex w-full max-w-7xl items-center justify-between gap-6 px-6 py-10 lg:px-10 lg:py-14">
+        <p className="max-w-xl text-sm leading-relaxed text-muted-foreground">
+          Cada profissional contribui com conhecimento técnico, visão
+          estratégica e compromisso com os objetivos de cada cliente.
+        </p>
+
+        <span className="hidden text-[10px] tracking-[0.35em] text-gold sm:block">
+          MENDES & BRITO
+        </span>
       </div>
     </section>
   )

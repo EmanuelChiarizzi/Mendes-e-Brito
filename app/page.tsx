@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/navbar"
 import { Hero } from "@/components/hero"
 import { About } from "@/components/about"
+import { Founders } from "@/components/founders"
 import { PracticeAreas } from "@/components/practice-areas"
 import { Team } from "@/components/team"
 import { Testimonials } from "@/components/testimonials"
@@ -13,12 +14,12 @@ export default function Page() {
       <Navbar />
       <Hero />
       <About />
+      <Founders />
       <PracticeAreas />
       <Team />
       <Testimonials />
       <Contact />
       <Footer />
-      
     </main>
   )
 }

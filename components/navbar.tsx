@@ -31,7 +31,6 @@ export function Navbar() {
         }`}
     >
       <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10">
-        {/* Logo placeholder */}
         <a href="#inicio" className="flex items-center gap-3" aria-label="Mendes e Brito Advogados">
           <span className="flex h-9 w-9 items-center justify-center rounded-sm border border-gold/50">
             <span className="font-serif text-lg leading-none text-gold">M</span>

@@ -13,14 +13,14 @@ import {
 const contactItems = [
   {
     label: "WhatsApp",
-    value: "(85) 99860-0040",
-    href: "https://wa.me/5585998600040",
+    value: "(85) 99147-7668",
+    href: "https://wa.me/5585991477668",
     icon: MessageCircle,
   },
   {
     label: "Telefone",
-    value: "(85) 99860-0040",
-    href: "tel:+5585998600040",
+    value: "(85) 99147-7668",
+    href: "tel:+5585991477668",
     icon: Phone,
   },
   {
@@ -31,7 +31,7 @@ const contactItems = [
   },
   {
     label: "Horário",
-    value: "Atendimento até as 18h",
+    value: "Atendimento até de 09:00 as 18:00",
     href: "#contato",
     icon: Clock3,
   },
@@ -71,7 +71,7 @@ export function Contact() {
             </p>
 
             <a
-              href="https://wa.me/5585998600040"
+              href="https://wa.me/5585991477668"
               target="_blank"
               rel="noreferrer"
               className="mt-10 inline-flex items-center gap-3 border border-gold bg-gold px-7 py-4 text-sm font-medium text-black transition-all duration-300 hover:bg-transparent hover:text-gold"

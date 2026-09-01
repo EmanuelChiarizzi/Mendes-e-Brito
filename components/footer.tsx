@@ -53,7 +53,7 @@ export function Footer() {
           </p>
 
           <div className="mt-6 space-y-4 text-sm leading-relaxed text-muted-foreground">
-            <p>(85) 99860-0040</p>
+            <p>(85) 99147-7668</p>
             <p>@mendesbritoadvogados</p>
             <p>
               Rua Vicente Linhares, 500, salas 1902 e 1903, Aldeota, Fortaleza —
@@ -62,7 +62,7 @@ export function Footer() {
           </div>
 
           <a
-            href="https://wa.me/5585998600040"
+            href="https://wa.me/5585991477668"
             target="_blank"
             rel="noreferrer"
             className="mt-6 inline-flex items-center gap-2 text-sm text-foreground transition-colors hover:text-gold"

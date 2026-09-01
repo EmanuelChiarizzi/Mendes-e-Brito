@@ -1,89 +1,68 @@
 ﻿"use client"
 
 import Image from "next/image"
-
 import { motion } from "framer-motion"
 import { ArrowUpRight } from "lucide-react"
 
 const teamMembers = [
   {
     name: "Amanda Trindade",
-    role: "Estagiaria",
+    role: "Estagiária",
     oab: "",
-    specialization: "",
-    experience: "",
     image: "/equipe-otimizada/amanda.webp",
   },
-    {
-    name: "Leticia Alencar",
-    role: "Estagiaria",
+  {
+    name: "Letícia Alencar",
+    role: "Estagiária",
     oab: "",
-    specialization: "",
-    experience: "",
     image: "",
   },
-    {
+  {
     name: "Maria Veras",
     role: "Assistente Jurídica",
     oab: "",
-    specialization: "",
-    experience: "",
     image: "",
   },
   {
     name: "Kamylla",
-    role: "Secretaria Executiva",
+    role: "Secretária Executiva",
     oab: "",
-    specialization: "",
-    experience: "",
     image: "/equipe-otimizada/kamylla.webp",
   },
   {
-    name: "Gabriela Oliveira Farias",
+    name: "Gabriela Farias",
     role: "Advogada",
     oab: "OAB/CE 53.153 | OAB/RN 24.008-A",
-    specialization: "Cível e Trabalhista",
-    experience: "2 anos de atuação",
     image: "/equipe-otimizada/gabriela.webp",
   },
   {
-    name: "Isadora Gonçalves da Silva",
+    name: "Isadora Silva",
     role: "Advogada",
     oab: "OAB/CE 57.241",
-    specialization: "Cível e Empresarial",
-    experience: "4 meses de atuação",
     image: "/equipe-otimizada/isadora.webp",
   },
   {
-    name: "Rodrigo Feitosa Leitão Lima",
+    name: "Rodrigo Lima",
     role: "Advogado",
     oab: "OAB/CE 45.645",
-    specialization: "Criminal e Direito Público",
-    experience: "5 anos de atuação",
     image: "/equipe-otimizada/rodrigo.webp",
   },
   {
-    name: "Lyzanndra Magna Gonçalves da Silva",
+    name: "Lyzanndra Silva",
     role: "Advogada — Coordenação",
     oab: "OAB/CE 44.207",
-    specialization: "Família, Consumidor e Cível Geral",
-    experience: "6 anos de atuação",
     image: "/equipe-otimizada/lyzanndra.webp",
   },
   {
-    name: "Yohanna Pontes Mendes",
-    role: "Sócia diretora",
+    name: "Yohanna Mendes",
+    role: "Sócia Diretora",
     oab: "OAB/CE 37.250",
-    specialization: "Direito das Famílias e Sucessões",
-    experience: "",
     image: "/equipe-otimizada/yohanna.webp",
   },
   {
-    name: "Anya Lima Penha de Brito",
-    role: "Sócia diretora",
+    name: "Anya Brito",
+    role: "Sócia Diretora",
     oab: "OAB/CE 19.162",
-    specialization: "Direito das Famílias e Sucessões",
-    experience: "",
     image: "/equipe-otimizada/anya.webp",
   },
 ]
@@ -98,7 +77,7 @@ export function Team() {
     >
       <BackgroundDecor />
 
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-16 pt-28 lg:px-10 lg:pb-24 lg:pt-40">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-12 pt-20 lg:px-10 lg:pb-16 lg:pt-24">
         <motion.div
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -109,7 +88,7 @@ export function Team() {
           }}
           className="max-w-3xl"
         >
-          <div className="mb-10 flex items-center gap-4">
+          <div className="mb-8 flex items-center gap-4">
             <span className="h-px w-12 bg-gold" />
 
             <span className="text-xs tracking-[0.4em] text-gold">
@@ -122,7 +101,7 @@ export function Team() {
             <span className="italic text-gold">proximidade.</span>
           </h2>
 
-          <p className="mt-10 max-w-2xl text-pretty text-base leading-relaxed text-muted-foreground lg:text-lg">
+          <p className="mt-7 max-w-2xl text-pretty text-base leading-relaxed text-muted-foreground lg:text-lg">
             Uma equipe comprometida com atendimento personalizado, análise
             criteriosa e construção de soluções jurídicas adequadas a cada
             realidade.
@@ -130,7 +109,7 @@ export function Team() {
         </motion.div>
       </div>
 
-      <div className="relative z-10 w-full overflow-hidden border-y border-border/60 py-10 lg:py-14">
+      <div className="relative z-10 w-full overflow-hidden border-y border-border/60 py-8 lg:py-10">
         <div className="pointer-events-none absolute inset-y-0 left-0 z-20 w-20 bg-gradient-to-r from-background to-transparent sm:w-32 lg:w-48" />
 
         <div className="pointer-events-none absolute inset-y-0 right-0 z-20 w-20 bg-gradient-to-l from-background to-transparent sm:w-32 lg:w-48" />
@@ -160,17 +139,29 @@ export function Team() {
                 <div className="absolute bottom-6 right-6 h-px w-12 bg-gold" />
                 <div className="absolute bottom-6 right-6 h-12 w-px bg-gold" />
 
+                {member.image ? (
+                  <>
+                    <Image
+                      src={member.image}
+                      alt={`Foto profissional de ${member.name}`}
+                      fill
+                      sizes="(max-width: 640px) 300px, (max-width: 1024px) 340px, 380px"
+                      className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                    />
 
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
+                  </>
+                ) : (
+                  <div className="flex h-full w-full flex-col items-center justify-center gap-3">
+                    <span className="font-serif text-5xl font-light text-gold/30">
+                      M&B
+                    </span>
 
-              <Image
-                src={member.image}
-                alt={`Foto profissional de ${member.name}`}
-                fill
-                sizes="(max-width: 640px) 300px, (max-width: 1024px) 340px, 380px"
-                className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
-              />
-
-              <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
+                    <span className="text-[10px] tracking-[0.3em] text-muted-foreground">
+                      FOTO EM ATUALIZAÇÃO
+                    </span>
+                  </div>
+                )}
               </div>
 
               <div className="border-t border-border/60 px-6 py-7 sm:px-8 sm:py-8">
@@ -183,6 +174,12 @@ export function Team() {
                     <h3 className="mt-3 font-serif text-2xl font-light text-foreground sm:text-3xl">
                       {member.name}
                     </h3>
+
+                    {member.oab && (
+                      <p className="mt-4 text-sm text-muted-foreground">
+                        {member.oab}
+                      </p>
+                    )}
                   </div>
 
                   <ArrowUpRight
@@ -191,27 +188,13 @@ export function Team() {
                     aria-hidden="true"
                   />
                 </div>
-                {(member.oab || member.specialization || member.experience) && (
-                  <div className="mt-5 space-y-2 text-sm text-muted-foreground">
-                    {member.oab && <p>{member.oab}</p>}
+              </div>
+            </article>
+          ))}
+        </motion.div>
+      </div>
 
-                    {member.specialization && (
-                      <p className="text-foreground/80">
-                        {member.specialization}
-                      </p>
-                    )}
-
-                    {member.experience && <p>{member.experience}</p>}
-                  </div>
-                )}
-
-                </div>
-              </article>
-              ))}
-            </motion.div>
-          </div>
-
-      <div className="relative z-10 mx-auto flex w-full max-w-7xl items-center justify-between gap-6 px-6 py-10 lg:px-10 lg:py-14">
+      <div className="relative z-10 mx-auto flex w-full max-w-7xl items-center justify-between gap-6 px-6 py-8 lg:px-10 lg:py-10">
         <p className="max-w-xl text-sm leading-relaxed text-muted-foreground">
           Cada profissional contribui com conhecimento técnico, visão
           estratégica e compromisso com os objetivos de cada cliente.

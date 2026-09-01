@@ -7,39 +7,53 @@ const founders = [
   {
     name: "Anya Lima Penha de Brito",
     shortName: "Anya Brito",
-    role: "Sócia Diretora",
+    role: "Advogada | Sócia do Mendes & Brito Advocacia",
     oab: "OAB/CE 19.162",
-    area: "Direito das Famílias e Sucessões",
     image: "/equipe-otimizada/anya.webp",
 
-    description:
-      "Advogada e sócia do Mendes & Brito Advocacia, possui sólida trajetória profissional e acadêmica, com atuação especialmente dedicada ao Direito das Famílias e Sucessões.",
+    paragraphs: [
+      "Advogada e sócia do Mendes & Brito Advocacia, Anya Lima Penha de Brito é Bacharel em Direito pela Universidade de Fortaleza (Unifor), desde 2006, e possui sólida trajetória profissional e acadêmica.",
 
-    details:
-      "Atua em demandas relacionadas a divórcio, união estável, guarda e convivência, alimentos, partilha de bens, inventários e planejamento sucessório, inclusive em casos que envolvem patrimônio relevante e estruturas empresariais.",
+      "É Mestre em Direito pelo Centro Universitário Christus (Unichristus), Pós-Graduada em Direito de Família e Sucessões pela Fundação Escola Superior do Ministério Público, possui MBA em Gestão e Business Law pela Universidade de Fortaleza (Unifor) e é Especialista em Direito do Trabalho pela Unichristus.",
+
+      "Sua atuação é especialmente dedicada ao Direito das Famílias e Sucessões, área em que alia experiência profissional, formação acadêmica especializada e atuação estratégica na condução de questões familiares e patrimoniais.",
+
+      "Atua em demandas relacionadas a divórcio, reconhecimento e dissolução de união estável, guarda e convivência, alimentos, partilha de bens, inventários e planejamento sucessório, tanto na esfera judicial quanto extrajudicial.",
+
+      "Possui experiência na condução de casos de maior complexidade, especialmente aqueles que envolvem patrimônio relevante, estruturas empresariais, investigação da capacidade econômica, proteção patrimonial e repercussões financeiras decorrentes das relações familiares.",
+
+      "À frente do Mendes & Brito Advocacia, participa diretamente da definição das estratégias jurídicas e do acompanhamento dos casos, pautando sua atuação pelo rigor técnico, estratégia, atendimento personalizado e busca por soluções juridicamente seguras.",
+    ],
 
     education: [
       "Bacharel em Direito — Universidade de Fortaleza (Unifor), 2006",
       "Mestre em Direito — Centro Universitário Christus (Unichristus)",
-      "Pós-Graduada em Direito de Família e Sucessões",
-      "MBA em Gestão e Business Law — Universidade de Fortaleza",
-      "Especialista em Direito do Trabalho — Unichristus",
+      "Pós-Graduada em Direito de Família e Sucessões — Fundação Escola Superior do Ministério Público",
+      "MBA em Gestão e Business Law — Universidade de Fortaleza (Unifor)",
+      "Especialista em Direito do Trabalho — Centro Universitário Christus (Unichristus)",
     ],
   },
 
   {
     name: "Yohanna Pontes Mendes",
     shortName: "Yohanna Mendes",
-    role: "Sócia Diretora",
+    role: "Advogada | Sócia do Mendes & Brito Advocacia",
     oab: "OAB/CE 37.250",
-    area: "Direito Imobiliário e Patrimonial",
     image: "/equipe-otimizada/yohanna.webp",
 
-    description:
-      "Advogada e sócia do Mendes & Brito Advocacia, possui atuação concentrada no Direito Imobiliário e Patrimonial, assessorando pessoas físicas, famílias, investidores e empresas.",
+    paragraphs: [
+      "Advogada e sócia do Mendes & Brito Advocacia, Yohanna Pontes Mendes é Bacharel em Direito pela Faculdade Farias Brito (FFB), Especialista em Direito Imobiliário pela Universidade de Fortaleza (Unifor) e membro do Instituto Brasileiro de Direito Imobiliário (IBRADIM).",
 
-    details:
-      "Atua em regularização imobiliária, usucapião, adjudicação compulsória, análise documental, contratos, negociações imobiliárias, organização patrimonial e planejamento sucessório.",
+      "Com atuação concentrada no Direito Imobiliário e Patrimonial, possui ampla experiência na condução de questões relacionadas à regularização jurídica e registral de imóveis, estruturação de negócios imobiliários e organização patrimonial.",
+
+      "Ao longo de sua trajetória profissional, desenvolveu experiência especialmente em procedimentos de regularização imobiliária, usucapião, adjudicação compulsória, retificação e regularização de registros, análise documental de imóveis, contratos de compra e venda e locações.",
+
+      "Sua atuação também compreende o planejamento e a organização patrimonial, com análise jurídica voltada à proteção do patrimônio, prevenção de riscos e planejamento sucessório.",
+
+      "Também atua de forma estratégica na estruturação e análise de negociações imobiliárias, realizando avaliação jurídica de documentos, contratos, matrículas, riscos e pendências que possam impactar a segurança e a viabilidade dos negócios.",
+
+      "À frente do Mendes & Brito Advocacia, participa diretamente da definição das estratégias jurídicas e do acompanhamento dos casos, pautando sua atuação pela técnica, estratégia, segurança jurídica e atendimento personalizado.",
+    ],
 
     education: [
       "Bacharel em Direito — Faculdade Farias Brito (FFB)",
@@ -57,7 +71,7 @@ export function Founders() {
     >
       <BackgroundDecor />
 
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-20 lg:px-10 lg:py-28">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-20 lg:px-10 lg:py-24">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -66,23 +80,23 @@ export function Founders() {
             duration: 0.8,
             ease: [0.22, 1, 0.36, 1],
           }}
-          className="mb-16 max-w-3xl lg:mb-20"
+          className="mb-14 max-w-3xl"
         >
-          <div className="mb-8 flex items-center gap-4">
+          <div className="mb-7 flex items-center gap-4">
             <span className="h-px w-12 bg-gold" />
 
             <span className="text-xs tracking-[0.4em] text-gold">
-              SÓCIAS DIRETORAS
+              SÓCIAS
             </span>
           </div>
 
           <h2 className="font-serif text-4xl font-light leading-[1.08] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            Experiência, estratégia e uma atuação{" "}
-            <span className="italic text-gold">próxima.</span>
+            Liderança construída com experiência, técnica e{" "}
+            <span className="italic text-gold">estratégia.</span>
           </h2>
         </motion.div>
 
-        <div className="space-y-24 lg:space-y-32">
+        <div className="space-y-24">
           {founders.map((founder, index) => (
             <Founder
               key={founder.name}
@@ -105,18 +119,18 @@ function Founder({
 }) {
   return (
     <motion.article
-      initial={{ opacity: 0, y: 35 }}
+      initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.15 }}
+      viewport={{ once: true, amount: 0.1 }}
       transition={{
         duration: 0.9,
         ease: [0.22, 1, 0.36, 1],
       }}
-      className={`grid items-center gap-10 lg:grid-cols-2 lg:gap-16 ${
+      className={`grid items-start gap-10 lg:grid-cols-12 lg:gap-14 ${
         reverse ? "lg:[&>*:first-child]:order-2" : ""
       }`}
     >
-      <div className="relative">
+      <div className="lg:col-span-5">
         <div className="relative aspect-[4/5] overflow-hidden border border-border/60 bg-foreground/[0.025]">
           <div className="absolute inset-5 z-10 border border-border/50" />
 
@@ -130,47 +144,38 @@ function Founder({
             src={founder.image}
             alt={`Foto profissional de ${founder.name}`}
             fill
-            sizes="(max-width: 1024px) 100vw, 50vw"
+            sizes="(max-width: 1024px) 100vw, 40vw"
             className="object-cover object-top"
           />
 
-          <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-transparent to-transparent" />
-
-          <div className="absolute bottom-8 left-8 z-20">
-            <span className="text-[10px] tracking-[0.35em] text-gold">
-              MENDES & BRITO
-            </span>
-          </div>
+          <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent" />
         </div>
       </div>
 
-      <div>
-        <p className="text-xs tracking-[0.32em] text-gold">
+      <div className="lg:col-span-7">
+        <p className="text-xs tracking-[0.25em] text-gold">
           {founder.role.toUpperCase()}
         </p>
 
-        <h3 className="mt-4 font-serif text-4xl font-light leading-tight text-foreground sm:text-5xl">
+        <h3 className="mt-4 font-serif text-4xl font-light text-foreground sm:text-5xl">
           {founder.shortName}
         </h3>
 
-        <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm text-muted-foreground">
-          <span>{founder.oab}</span>
+        <p className="mt-4 text-sm text-muted-foreground">
+          {founder.oab}
+        </p>
 
-          <span className="hidden text-gold sm:inline">•</span>
+        <div className="my-7 h-px w-20 bg-gold/70" />
 
-          <span className="text-foreground/85">{founder.area}</span>
+        <div className="max-w-2xl space-y-5 text-base leading-relaxed text-muted-foreground">
+          {founder.paragraphs.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
         </div>
 
-        <div className="my-8 h-px w-20 bg-gold/70" />
-
-        <div className="max-w-xl space-y-5 text-base leading-relaxed text-muted-foreground">
-          <p>{founder.description}</p>
-          <p>{founder.details}</p>
-        </div>
-
-        <div className="mt-9">
+        <div className="mt-10">
           <p className="mb-5 text-[11px] tracking-[0.3em] text-gold">
-            FORMAÇÃO E ATUAÇÃO
+            FORMAÇÃO ACADÊMICA E INSTITUCIONAL
           </p>
 
           <div className="space-y-3">
@@ -180,7 +185,6 @@ function Founder({
                 className="flex gap-4 border-b border-border/40 pb-3 text-sm leading-relaxed text-muted-foreground"
               >
                 <span className="mt-[9px] h-px w-4 shrink-0 bg-gold/70" />
-
                 <span>{item}</span>
               </div>
             ))}

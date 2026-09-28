@@ -15,13 +15,13 @@ const teamMembers = [
     name: "Letícia Alencar",
     role: "Estagiária",
     oab: "",
-    image: "",
+    image: "/equipe-otimizada/leticia.jpeg",
   },
   {
     name: "Maria Veras",
     role: "Assistente Jurídica",
     oab: "",
-    image: "",
+    image: "/equipe-otimizada/maria veras.jpeg",
   },
   {
     name: "Kamylla",
@@ -57,13 +57,13 @@ const teamMembers = [
     name: "Yohanna Mendes",
     role: "Sócia Diretora",
     oab: "OAB/CE 37.250",
-    image: "/equipe-otimizada/yohanna.webp",
+    image: "/equipe-otimizada/yohanna.jpg",
   },
   {
     name: "Anya Brito",
     role: "Sócia Diretora",
     oab: "OAB/CE 19.162",
-    image: "/equipe-otimizada/anya.webp",
+    image: "/equipe-otimizada/anya.jpg",
   },
 ]
 

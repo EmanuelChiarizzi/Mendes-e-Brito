@@ -151,21 +151,32 @@ export function About() {
 function VisualPlaceholder() {
   return (
     <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm border border-border bg-black">
-      <div className="absolute inset-4 rounded-sm border border-gold/20" />
-      <div className="absolute inset-8 rounded-sm border border-gold/10" />
-
       <Image
-        src="/logo.png"
-        alt="Mendes & Brito Advocacia"
+        src="/FotoJuntas.jpeg"
+        alt="Yohanna Mendes e Anya Brito, sócias fundadoras do Mendes & Brito Advocacia"
         fill
         sizes="(max-width: 1024px) 100vw, 40vw"
-        className="object-contain p-8 sm:p-10 lg:p-12"
+        className="object-cover object-center"
       />
 
-      <span className="absolute left-4 top-4 h-4 w-px bg-gold/70" />
-      <span className="absolute left-4 top-4 h-px w-4 bg-gold/70" />
-      <span className="absolute bottom-4 right-4 h-4 w-px bg-gold/70" />
-      <span className="absolute bottom-4 right-4 h-px w-4 bg-gold/70" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
+
+      <div className="absolute inset-4 rounded-sm border border-white/10" />
+
+      <span className="absolute left-4 top-4 h-4 w-px bg-white/40" />
+      <span className="absolute left-4 top-4 h-px w-4 bg-white/40" />
+      <span className="absolute bottom-4 right-4 h-4 w-px bg-white/40" />
+      <span className="absolute bottom-4 right-4 h-px w-4 bg-white/40" />
+
+      <div className="absolute bottom-6 left-6 right-6">
+        <p className="text-[10px] uppercase tracking-[0.32em] text-white/60">
+          Sócias fundadoras
+        </p>
+
+        <p className="mt-2 font-serif text-2xl font-light text-white">
+          Yohanna Mendes &amp; Anya Brito
+        </p>
+      </div>
     </div>
   )
 }

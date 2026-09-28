@@ -9,7 +9,7 @@ const founders = [
     shortName: "Anya Brito",
     role: "Advogada | Sócia do Mendes & Brito Advocacia",
     oab: "OAB/CE 19.162",
-    image: "/equipe-otimizada/anya.webp",
+    image: "/equipe-otimizada/anya.jpg",
 
     paragraphs: [
       "Advogada e sócia do Mendes & Brito Advocacia, Anya Lima Penha de Brito é Bacharel em Direito pela Universidade de Fortaleza (Unifor), desde 2006, e possui sólida trajetória profissional e acadêmica.",
@@ -39,7 +39,7 @@ const founders = [
     shortName: "Yohanna Mendes",
     role: "Advogada | Sócia do Mendes & Brito Advocacia",
     oab: "OAB/CE 37.250",
-    image: "/equipe-otimizada/yohanna.webp",
+    image: "/equipe-otimizada/yohanna.jpg",
 
     paragraphs: [
       "Advogada e sócia do Mendes & Brito Advocacia, Yohanna Pontes Mendes é Bacharel em Direito pela Faculdade Farias Brito (FFB), Especialista em Direito Imobiliário pela Universidade de Fortaleza (Unifor) e membro do Instituto Brasileiro de Direito Imobiliário (IBRADIM).",

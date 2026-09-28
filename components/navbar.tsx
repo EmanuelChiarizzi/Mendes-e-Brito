@@ -42,35 +42,22 @@ export function Navbar() {
           : "border-b border-transparent"
       }`}
     >
-      <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10">
-        
+      <nav className="mx-auto flex h-24 max-w-7xl items-center justify-between px-6 lg:px-10">
         {/* Logo */}
         <a
           href="#inicio"
-          className="flex items-center gap-3"
+          className="flex items-center"
           aria-label="Mendes & Brito Advocacia"
         >
-          <div className="relative h-14 w-14 shrink-0 overflow-hidden">
+          <div className="relative h-16 w-52 sm:w-60">
             <Image
-              src="/logotopo.png"
-              alt="Símbolo Mendes & Brito"
+              src="/logofinal.png"
+              alt="Mendes & Brito Advocacia"
               fill
               priority
-              sizes="56px"
-              className="object-cover scale-125"
+              sizes="(max-width: 640px) 208px, 240px"
+              className="object-contain object-left"
             />
-          </div>
-
-          <div className="flex flex-col leading-none">
-            <span className="font-serif text-lg tracking-[0.18em] text-foreground sm:text-xl">
-              MENDES{" "}
-              <span className="text-gold">&amp;</span>{" "}
-              BRITO
-            </span>
-
-            <span className="mt-1.5 text-[10px] tracking-[0.42em] text-gold">
-              ADVOCACIA
-            </span>
           </div>
         </a>
 
@@ -99,15 +86,9 @@ export function Navbar() {
           aria-expanded={open}
         >
           {open ? (
-            <X
-              className="h-6 w-6"
-              strokeWidth={1.5}
-            />
+            <X className="h-6 w-6" strokeWidth={1.5} />
           ) : (
-            <Menu
-              className="h-6 w-6"
-              strokeWidth={1.5}
-            />
+            <Menu className="h-6 w-6" strokeWidth={1.5} />
           )}
         </button>
       </nav>

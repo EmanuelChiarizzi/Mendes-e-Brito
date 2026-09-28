@@ -51,7 +51,7 @@ export function Navbar() {
         >
           <div className="relative h-16 w-52 sm:w-60">
             <Image
-              src="/logofinal.png"
+              src="/LogoFinal.png"
               alt="Mendes & Brito Advocacia"
               fill
               priority

@@ -24,7 +24,7 @@ const teamMembers = [
     image: "/equipe-otimizada/maria veras.jpeg",
   },
   {
-    name: "Kamylla",
+    name: "Kamylla Guimarães",
     role: "Secretária Executiva",
     oab: "",
     image: "/equipe-otimizada/kamylla.webp",

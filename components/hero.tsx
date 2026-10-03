@@ -63,6 +63,21 @@ export function Hero() {
               <br />
               <span className="italic text-muted-foreground">somos.</span>
             </motion.h1>
+
+            {/* Conheça as sócias reposicionado */}
+            <motion.div
+              variants={item}
+              className="mt-10 flex items-center gap-5"
+            >
+              <span className="h-px w-14 bg-foreground/40" />
+
+              <a
+                href="#socias"
+                className="text-[11px] tracking-[0.28em] text-muted-foreground transition-colors duration-300 hover:text-foreground"
+              >
+                CONHEÇA AS SÓCIAS
+              </a>
+            </motion.div>
           </div>
 
           {/* Lado direito */}
@@ -93,20 +108,6 @@ export function Hero() {
                 relações pautadas pela confiança.
               </p>
             </div>
-
-            <motion.div
-              variants={item}
-              className="mt-12 flex items-center gap-5"
-            >
-              <span className="h-px w-16 bg-foreground/40" />
-
-              <a
-                href="#socias"
-                className="text-xs tracking-[0.25em] text-foreground transition-opacity duration-300 hover:opacity-60"
-              >
-                CONHEÇA AS SÓCIAS
-              </a>
-            </motion.div>
           </motion.div>
         </motion.div>
       </div>

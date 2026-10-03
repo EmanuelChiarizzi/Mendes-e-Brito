@@ -30,40 +30,46 @@ const teamMembers = [
     image: "/equipe-otimizada/kamylla.webp",
   },
   {
-    name: "Gabriela Farias",
+    name: "Dra. Gabriela Farias",
     role: "Advogada",
     oab: "OAB/CE 53.153 | OAB/RN 24.008-A",
     image: "/equipe-otimizada/gabriela.webp",
+    especialização: "Cível e Trabalhista",
   },
   {
-    name: "Isadora Silva",
+    name: "Dra. Isadora Gonçalves",
     role: "Advogada",
     oab: "OAB/CE 57.241",
     image: "/equipe-otimizada/isadora.webp",
+    especialização: "Cível e Empresarial",
   },
   {
-    name: "Rodrigo Lima",
+    name: "Dr. Rodrigo Feitosa",
     role: "Advogado",
     oab: "OAB/CE 45.645",
     image: "/equipe-otimizada/rodrigo.webp",
+    especialização: "Criminal e Direito Público",
   },
   {
-    name: "Lyzanndra Silva",
+    name: "Dra. Lyzanndra Magna",
     role: "Advogada — Coordenação",
     oab: "OAB/CE 44.207",
     image: "/equipe-otimizada/lyzanndra.webp",
+    especialização: "Família, Consumidor e Cível",
   },
   {
-    name: "Yohanna Mendes",
+    name: "Dra. Yohanna Mendes",
     role: "Sócia Diretora",
     oab: "OAB/CE 37.250",
     image: "/equipe-otimizada/yohanna.jpg",
+    especialização: "Direito Imobiliário e Patrimonial",
   },
   {
-    name: "Anya Brito",
+    name: "Dra. Anya Brito",
     role: "Sócia Diretora",
     oab: "OAB/CE 19.162",
     image: "/equipe-otimizada/anya.jpg",
+    especialização: "Direito de Família, Sucessões e Trabalhista",
   },
 ]
 
@@ -178,6 +184,12 @@ export function Team() {
                     {member.oab && (
                       <p className="mt-4 text-sm text-muted-foreground">
                         {member.oab}
+                      </p>
+                    )}
+
+                    {member.especialização && (
+                      <p className="mt-3 max-w-[260px] text-sm leading-relaxed text-foreground/75">
+                        {member.especialização}
                       </p>
                     )}
                   </div>

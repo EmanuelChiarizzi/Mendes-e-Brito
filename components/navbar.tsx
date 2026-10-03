@@ -42,14 +42,14 @@ export function Navbar() {
           : "border-b border-transparent"
       }`}
     >
-      <nav className="mx-auto flex h-24 max-w-7xl items-center justify-between px-6 lg:px-10">
+      <nav className="mx-auto flex h-28 max-w-7xl items-center justify-between px-6 lg:px-10">
         {/* Logo */}
         <a
           href="#inicio"
           className="flex items-center"
           aria-label="Mendes & Brito Advocacia"
         >
-          <div className="relative h-16 w-52 sm:w-60">
+          <div className="relative h-20 w-64 sm:w-72">
             <Image
               src="/LogoFinal.png"
               alt="Mendes & Brito Advocacia"
